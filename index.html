@@ -16,6 +16,7 @@
 		<title>Азат Салахутдинов</title>
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
+		<link rel="stylesheet" href="css/preload.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
@@ -111,6 +112,36 @@
 	<script>
 		new WOW().init();
 	</script>
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	
+	<script>
+		$(window).load(function() {
+  setTimeout(function () { 
+    $(".loader").delay(100).fadeOut().remove();   
+  }, 2000);  
+});
+</script>
 
+<div class="loader">
+	<div class="loader-inner">
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+		<div class="loader-line-wrap">
+			<div class="loader-line"></div>
+		</div>
+	</div>
+</div>
+ 
 </body>
 </html>
