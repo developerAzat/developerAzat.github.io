@@ -17,6 +17,7 @@
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> 
 		<link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,16 +27,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<img src="img/main_Azat.jpg" alt="Аватар автора">
+					<img src="img/main_Azat.jpg" class="wow fadeInLeftBig" alt="Аватар автора">
 				</div>
 				<!-- /.col-7 -->
 				<div class="col-lg-5">
-					<p class="header-pretitle">Студент</p>
-					<h1 class="header-title">Азат Салахутдинов</h1>
-					<p class="header-subtitle">Институт вычислительной математики и информационных технологий<br>
+					<p class="header-pretitle wow fadeInRightBig"  data-wow-delay="0.1s">Студент</p>
+					<h1 class="header-title wow fadeInRightBig"  data-wow-delay="0.2s">Азат Салахутдинов</h1>
+					<p class="header-subtitle wow fadeInRightBig"  data-wow-delay="0.3s">Институт вычислительной математики и информационных технологий<br>
 												Прикладная математика и информатика</p>
-					<div class="header-button-block">
-						<a href="https://vk.me/krashday" target="_blank" class="header-button">Связаться</a>
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+						<a href="https://vk.me/krashday" target="_blank" class="header-button" >Связаться</a>
 						<small>*Это Бесплатно</small>
 					</div>
 				</div>
@@ -48,7 +49,7 @@
 
 	<section class="portfolio">
 		<div class="container">
-			<div class="portfolio-block">
+			<div class="portfolio-block animated rollIn">
 				<h2 class="portfolio-title">Портфолио</h2>
 				<p class="portfolio-subtitle">Место учебы</p>
 				<div class="row">
@@ -89,10 +90,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="#"><img src="img/social/facebook-logo-button.png" alt="facebook"></a>
-						<a href="#"><img src="img/social/telegram-symbol.png" alt="Telegram"></a>
-						<a href="https://vk.com/krashday" target="_blank"><img src="img/social/vk-social-logotype.png" alt="Vkontakte"></a>
-						<a href="#"><img src="img/social/youtube-symbol.png" alt="Youtube"></a>
+						<a href="#"><img src="img/social/facebook-logo-button.png" class="wow fadeInDownBig" data-wow-delay="0.1s"  alt="facebook"></a>
+						<a href="#"><img src="img/social/telegram-symbol.png"  class="wow fadeInDownBig" data-wow-delay="0.2s" alt="Telegram"></a>
+						<a href="https://vk.com/krashday" target="_blank"><img src="img/social/vk-social-logotype.png" class="wow fadeInDownBig" data-wow-delay="0.3s"  alt="Vkontakte"></a>
+						<a href="#"><img src="img/social/youtube-symbol.png" class="wow fadeInDownBig" data-wow-delay="0.4s"  alt="Youtube"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -106,6 +107,10 @@
 		</div>
 		<!-- /.container -->
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 
 </body>
 </html>
